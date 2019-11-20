@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="230dp"
+            android:layout_height="270dp"
+            android:src="@mipmap/p0" />
+        <Button
+            android:id="@+id/ObjectAnimatorBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startAnimation"
+            android:text="ObjectAnimator" />
+        <Button
+            android:id="@+id/ValueAnimatorBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startAnimation"
+            android:text="ValueAnimator" />
+    </LinearLayout>
+</RelativeLayout>
